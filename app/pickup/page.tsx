@@ -72,7 +72,7 @@ export default function PickupPage() {
     e.preventDefault()
     
     try {
-      const response = await fetch("http://localhost:4000/api/v1/track/submit", {
+      const response = await fetch("https://e-waste-cl3k.onrender.com/api/v1/track/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
