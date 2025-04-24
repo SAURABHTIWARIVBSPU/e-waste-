@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "client": "next dev",
-    "server": "cd Server && npm run dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\""
-  },
+  "client": "next dev",
+  "server": "cd Server && npm run dev",
+  "build": "NODE_OPTIONS='--max-old-space-size=512' next build",
+  "start": "next start",
+  "lint": "next lint",
+  "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run client\" \"npm run server\""
+}
+,
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
